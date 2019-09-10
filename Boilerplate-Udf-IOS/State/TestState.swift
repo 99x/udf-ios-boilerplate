@@ -10,9 +10,6 @@ import UdfBase
 struct TestState {
     let users: [TestUser]
     let count: Int
-    let date: Int
-    let month: Int
-    let fact: "
     
     public init(users: [TestUser] = [], count: Int = 0){
         self.users = users
