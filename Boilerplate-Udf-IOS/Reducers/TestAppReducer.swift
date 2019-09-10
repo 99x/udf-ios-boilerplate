@@ -20,6 +20,8 @@ func testAppReducer(action: Action, state: UdfBaseState<TestState>?) -> UdfBaseS
         return removeTestUserReducer(action: action, state: state)
     case _ as RemoveAllUsers:
         return removeAllUsersReducer(action: action, state: state)
+    
+    // NB: Done't delete below case
     case _ as RemoveStateStatus:
         return reducerUtil.removeStateStatusReducer(action: action, state: state)
     default:

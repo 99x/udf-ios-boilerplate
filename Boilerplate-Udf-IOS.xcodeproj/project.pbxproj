@@ -37,6 +37,9 @@
 		242BCA702327A3B100C90811 /* RemoveAllusersReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242BCA5223279ED500C90811 /* RemoveAllusersReducer.swift */; };
 		242BCA712327A3B100C90811 /* TestUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242BCA5423279ED600C90811 /* TestUser.swift */; };
 		242BCA722327A3B100C90811 /* TestActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242BCA5823279ED600C90811 /* TestActions.swift */; };
+		242BCA7A2327AFB500C90811 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242BCA752327AFB500C90811 /* Network.swift */; };
+		242BCA7B2327AFB500C90811 /* FactResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242BCA772327AFB500C90811 /* FactResponse.swift */; };
+		242BCA7C2327AFB500C90811 /* FactRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242BCA792327AFB500C90811 /* FactRequest.swift */; };
 		A049F82F1659626C5A9FD778 /* Pods_Boilerplate_Udf_IOS_Boilerplate_Udf_IOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEC8610BA502A23918F4D448 /* Pods_Boilerplate_Udf_IOS_Boilerplate_Udf_IOSTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +77,9 @@
 		242BCA5823279ED600C90811 /* TestActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestActions.swift; sourceTree = "<group>"; };
 		242BCA5A23279ED600C90811 /* ApiServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiServices.swift; sourceTree = "<group>"; };
 		242BCA672327A13400C90811 /* BoilerplateTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoilerplateTest.swift; sourceTree = "<group>"; };
+		242BCA752327AFB500C90811 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		242BCA772327AFB500C90811 /* FactResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactResponse.swift; sourceTree = "<group>"; };
+		242BCA792327AFB500C90811 /* FactRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactRequest.swift; sourceTree = "<group>"; };
 		252363DDDD180500E2630699 /* Pods-Boilerplate-Udf-IOS-Boilerplate-Udf-IOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Boilerplate-Udf-IOS-Boilerplate-Udf-IOSTests.debug.xcconfig"; path = "Target Support Files/Pods-Boilerplate-Udf-IOS-Boilerplate-Udf-IOSTests/Pods-Boilerplate-Udf-IOS-Boilerplate-Udf-IOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2B034FA78D6716B320AB6439 /* Pods_Boilerplate_Udf_IOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Boilerplate_Udf_IOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEC8610BA502A23918F4D448 /* Pods_Boilerplate_Udf_IOS_Boilerplate_Udf_IOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Boilerplate_Udf_IOS_Boilerplate_Udf_IOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +131,7 @@
 		242BCA2623279E2500C90811 /* Boilerplate-Udf-IOS */ = {
 			isa = PBXGroup;
 			children = (
+				242BCA732327AFB500C90811 /* NetworkLayer */,
 				242BCA4A23279ED500C90811 /* State */,
 				242BCA4723279ED500C90811 /* SideEffects */,
 				242BCA5923279ED600C90811 /* Services */,
@@ -219,6 +226,40 @@
 				242BCA5A23279ED600C90811 /* ApiServices.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		242BCA732327AFB500C90811 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				242BCA742327AFB500C90811 /* Network */,
+				242BCA762327AFB500C90811 /* Responses */,
+				242BCA782327AFB500C90811 /* Requests */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		242BCA742327AFB500C90811 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				242BCA752327AFB500C90811 /* Network.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		242BCA762327AFB500C90811 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				242BCA772327AFB500C90811 /* FactResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		242BCA782327AFB500C90811 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				242BCA792327AFB500C90811 /* FactRequest.swift */,
+			);
+			path = Requests;
 			sourceTree = "<group>";
 		};
 		7861F662E5CCEA6CF4E24CD7 /* Pods */ = {
@@ -427,6 +468,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				242BCA7A2327AFB500C90811 /* Network.swift in Sources */,
 				242BCA692327A3B100C90811 /* TestState.swift in Sources */,
 				242BCA6A2327A3B100C90811 /* TestUserManagementSideEffects.swift in Sources */,
 				242BCA6B2327A3B100C90811 /* TestSideEffects.swift in Sources */,
@@ -434,10 +476,12 @@
 				242BCA6D2327A3B100C90811 /* TestAppReducer.swift in Sources */,
 				242BCA6E2327A3B100C90811 /* AddTestUserReducer.swift in Sources */,
 				242BCA6F2327A3B100C90811 /* RemoveTestUserReducer.swift in Sources */,
+				242BCA7B2327AFB500C90811 /* FactResponse.swift in Sources */,
 				242BCA702327A3B100C90811 /* RemoveAllusersReducer.swift in Sources */,
 				242BCA712327A3B100C90811 /* TestUser.swift in Sources */,
 				242BCA722327A3B100C90811 /* TestActions.swift in Sources */,
 				242BCA2A23279E2500C90811 /* ViewController.swift in Sources */,
+				242BCA7C2327AFB500C90811 /* FactRequest.swift in Sources */,
 				242BCA2823279E2500C90811 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

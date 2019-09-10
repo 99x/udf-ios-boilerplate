@@ -10,6 +10,7 @@ import UIKit
 import UdfBase
 import ReSwift
 
+let BaseUrl = "http://numbersapi.com/"
 let sideEffects = injectService(service: TestRemoteDataService(), receivers: dataServiceSideEffects)
 let middleware = createMiddleware(appState: TestState(), items: sideEffects)
 let store = Store<UdfBaseState<TestState>>(reducer: testAppReducer, state: nil, middleware: [middleware])
