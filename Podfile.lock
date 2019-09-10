@@ -1,0 +1,47 @@
+PODS:
+  - Alamofire (4.9.0)
+  - Nimble (8.0.3)
+  - PromiseKit (6.11.0):
+    - PromiseKit/CorePromise (= 6.11.0)
+    - PromiseKit/Foundation (= 6.11.0)
+    - PromiseKit/UIKit (= 6.11.0)
+  - PromiseKit/CorePromise (6.11.0)
+  - PromiseKit/Foundation (6.11.0):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.11.0):
+    - PromiseKit/CorePromise
+  - Quick (2.1.0)
+  - ReSwift (5.0.0)
+  - UdfBase (0.1.8):
+    - PromiseKit
+    - ReSwift
+
+DEPENDENCIES:
+  - Alamofire
+  - Nimble
+  - PromiseKit
+  - Quick
+  - ReSwift
+  - UdfBase
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Nimble
+    - PromiseKit
+    - Quick
+    - ReSwift
+  https://github.com/surenr/public.cocopods.git:
+    - UdfBase
+
+SPEC CHECKSUMS:
+  Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
+  Nimble: 0528b9f5ab2a6c128890f8f98b6dc5cf383d0476
+  PromiseKit: e4863d06976e7dee5e41c04fc7371c16b3600292
+  Quick: 4be43f6634acfa727dd106bdf3929ce125ffa79d
+  ReSwift: 628f1a9b3ee52e3b3ca2a644435472fd77afafe1
+  UdfBase: 14d11c0bb9b1b1037298cf0ccf3757c2640c124c
+
+PODFILE CHECKSUM: 910c68eb745b8ce6cc7a0dd31674d51283dfde0f
+
+COCOAPODS: 1.7.5
